@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtnum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice1 number is :- "
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtnum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dice2 number is :- "
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgdice2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/dice5"/>
+
+            <ImageView
+                android:id="@+id/imgdice1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/dice2" />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnroll"
+            android:layout_width="160dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:text="Roll dice" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total of two dice :  "
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
